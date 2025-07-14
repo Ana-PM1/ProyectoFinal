@@ -2,40 +2,37 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject palancaPrefab;
+    
+
+
 
     [SerializeField]
-    private GameObject playerPrefab;
+    private PlayerController player;
 
     [SerializeField]
-    private GameObject puertaPrefab;
+    private EnemyController[] enemigos;
 
-    [SerializeField]
-    private MovingPlatform plataformaMovil;
+    
 
     private void Update()
     {
-        ActivarPalanca();
-        ActivarPalancaPlataformas();
-    }
 
-
-    private void ActivarPalanca()
-    {
-        if (Input.GetKeyDown(KeyCode.E))
+        // Prueba: Q le hace daño al jugador
+        if (Input.GetKeyDown(KeyCode.Q))
         {
-            puertaPrefab.SetActive(false);
-            Debug.Log("Palanca activada");
+            player.TakeDamage(1);
+        }
+
+        // Prueba: T le hace daño a todos los enemigos
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            foreach (var enemigo in enemigos)
+            {
+                enemigo.TakeDamage(1);
+            }
         }
     }
 
-    private void ActivarPalancaPlataformas()
-{
-    if (Input.GetKeyDown(KeyCode.R))
-    {
-        plataformaMovil.Activate();
-        Debug.Log("Plataforma activada");
-    }
-} 
+
+    
 }

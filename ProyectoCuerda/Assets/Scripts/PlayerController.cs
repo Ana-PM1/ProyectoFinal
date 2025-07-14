@@ -16,6 +16,9 @@ public class PlayerController : MonoBehaviour
 
     public bool isOnRope = false;
 
+    [SerializeField]
+    private float vidas = 3f;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -63,4 +66,28 @@ public class PlayerController : MonoBehaviour
             jumpCount = 0;
         }
     }
+
+    public void TakeDamage(float damage)
+    {
+        vidas -= damage;
+        Debug.Log($"{gameObject.name} recibió daño. Vidas restantes: {vidas}");
+        if (vidas <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        Debug.Log("Player died");
+        Destroy(gameObject);
+    }
+
+    public void GanarVida(float cantidad)
+    {
+        vidas += cantidad;
+        Debug.Log("Vida aumentada. Vidas actuales: " + vidas);
+    }
+
+
 }

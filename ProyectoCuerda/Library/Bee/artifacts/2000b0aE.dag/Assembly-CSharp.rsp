@@ -382,8 +382,10 @@
 "Assets/Scripts/PlayerBalanceo.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/PlayerData.cs"
+"Assets/Scripts/PruebaScene.cs"
 "Assets/Scripts/SaveManager.cs"
 "Assets/Scripts/TargetCuerda.cs"
+"Assets/Scripts/TransitionManager.cs"
 "Assets/Scripts/VidaPowerUp.cs"
 -langversion:9.0
 

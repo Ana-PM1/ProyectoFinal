@@ -387,6 +387,7 @@
 "Assets/Scripts/TargetCuerda.cs"
 "Assets/Scripts/TransitionManager.cs"
 "Assets/Scripts/VidaPowerUp.cs"
+"Assets/VistaController.cs"
 -langversion:9.0
 
 /deterministic

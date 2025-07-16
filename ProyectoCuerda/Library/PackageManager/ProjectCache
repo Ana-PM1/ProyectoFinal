@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638881889858986969
+      ticks: 638882316920404598
     m_Hash: 778285207
   m_LockFileStatus:
     m_FilePath: C:/Users/dansa/Code/GitHub/ProyectoFinal/ProyectoCuerda/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638881889858996970
+      ticks: 638882316920404598
     m_Hash: 2944461981
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}

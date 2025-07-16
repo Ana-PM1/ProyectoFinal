@@ -914,10 +914,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd61e27fb5e005645bec045b321be62f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  velocidad: 2
   vidas: 2
-  vista: {fileID: 0}
-  agent: {fileID: 0}
-  jugador: {fileID: 0}
+  puntoA: {fileID: 0}
+  puntoB: {fileID: 0}
 --- !u!135 &702986308
 SphereCollider:
   m_ObjectHideFlags: 0

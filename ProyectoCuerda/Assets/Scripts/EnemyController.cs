@@ -43,6 +43,13 @@ public class EnemyController : MonoBehaviour
             // Cambiar de direccin
             destinoActual = (destinoActual == puntoA) ? puntoB : puntoA;
         }
+
+        if (destinoActual != null)
+        {
+            float direccion = destinoActual.position.x - transform.position.x;
+            if (direccion != 0)
+                transform.localScale = new Vector3(Mathf.Sign(direccion), 1, 1);
+        }
     }
 
     public void DetectarJugador(Transform jugadorDetectado)

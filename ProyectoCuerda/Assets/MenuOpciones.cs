@@ -15,6 +15,13 @@ public class MenuOpciones : MonoBehaviour
         Screen.fullScreen = pantallaCompleta;
     }
 
+    public void ModoVentana(bool modoVentana)
+    {
+        
+        Screen.SetResolution(1280, 720, false);
+    
+    }
+
     public void CambiarVolumen(float volumen)
     {
         volumeMixer.SetFloat("Musica", volumen);

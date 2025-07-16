@@ -64,6 +64,7 @@ public class PlayerController : MonoBehaviour
         {
             isGrounded = true;
             jumpCount = 0;
+            Debug.Log("En Suelo");
         }
     }
 
